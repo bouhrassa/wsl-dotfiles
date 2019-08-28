@@ -18,11 +18,10 @@ done
 # update and install package lists
 echo "Updating and installing packages"
 
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo add-apt-repository universe
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y build-essential nodejs python yarn
+sudo apt install -y build-essential nodejs python fonts-firacode
 sudo apt autoremove -y 
-sudo yarn global add eslint prettier eslint-config-prettier eslint-plugin-prettier eslint eslint-config-airbnb-base eslint-plugin-import
+sudo npm install -g eslint prettier eslint-plugin-prettier eslint-config-prettier
