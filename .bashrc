@@ -127,4 +127,3 @@ PS1="\n\e[36m\$(parse_git_branch_and_add_brackets) \e[32;1m\u\e[0m \e[33;1m[\w]\
 
 # Shortcuts
 alias php='php -S localhost:8080'
-alias python='python3'
