@@ -18,7 +18,11 @@ done
 # update and install package lists
 echo "Updating and installing packages"
 
+# Font-firaCode
 sudo add-apt-repository universe
+
+#Nodejs 10
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
 sudo apt update -y
 sudo apt upgrade -y
