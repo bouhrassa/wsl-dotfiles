@@ -31,6 +31,6 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/source
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y build-essential nodejs python3 python3-pip fonts-firacode yarn
+sudo apt install -y build-essential nodejs python3 python3-pip python3-venv fonts-firacode yarn
 sudo apt autoremove -y 
 sudo yarn global add eslint prettier eslint-plugin-prettier eslint-config-prettier
