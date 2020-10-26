@@ -3,7 +3,7 @@
 Clone in WSL home directory and install.
 
 ```bash
-git clone git@github.com:bouhrassa/wsl-dotfiles.git
+git clone git@github.com:ma-bourassa/wsl-dotfiles.git
 
 ./wsl-dotfiles/install.sh
 ```

@@ -21,11 +21,12 @@ echo "Updating and installing packages"
 # Font-firaCode
 sudo add-apt-repository universe
 
-#Nodejs 10
-curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+#Nodejs
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+nvm install node --lts
 
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y build-essential nodejs python3 python-pip python3-pip python3-venv fonts-firacode
+sudo apt install -y build-essential nodejs python3 python3-pip python3-venv fonts-firacode
 sudo apt autoremove -y 
 sudo npm install -g eslint prettier eslint-plugin-prettier eslint-config-prettier
